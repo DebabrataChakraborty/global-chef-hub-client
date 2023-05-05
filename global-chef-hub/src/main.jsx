@@ -9,6 +9,7 @@ import RegisterForm from "./Pages/Register";
 import LoginForm from "./Pages/Login";
 import ProtectedRoute from "./Routes/ProtectedRoute";
 import Blog from "./Pages/Blog";
+import ErrorPage from "./Pages/ErrorPage";
 
 function allChefLoader({ request }) {
   return fetch("https://global-chef-server-debabratachakraborty880-gmailcom.vercel.app/alldata", {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomePage />,
     loader: allChefLoader,
+    errorElement: <ErrorPage />,
   },
   {
     path: "details/:chefid",
@@ -30,14 +32,17 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <RegisterForm />,
+   
   },
   {
     path: "/login",
     element: <LoginForm />,
+    
   },
   {
     path: "/blog",
     element: <Blog />,
+   
   },
 ]);
 

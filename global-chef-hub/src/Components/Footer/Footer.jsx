@@ -32,7 +32,7 @@ export default function Footer() {
         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Chef</a></li>
         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+        <li className="nav-item mb-2"><a href="/food" className="nav-link p-0 text-muted">About</a></li>
       </ul>
     </div>
 
